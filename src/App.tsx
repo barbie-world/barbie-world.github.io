@@ -1,6 +1,7 @@
 import './App.sass'
+import { Route, Switch } from 'react-router-dom'
 
-function App() {
+function MainPage() {
   return (
     <article>
       <h1>Welcome to BarbieWorld</h1>
@@ -22,6 +23,14 @@ function App() {
       </p>
       <button type="button">Join the following</button>
     </article>
+  )
+}
+
+function App() {
+  return (
+    <Switch>
+      <Route path="/" component={MainPage} />
+    </Switch>
   )
 }
 
