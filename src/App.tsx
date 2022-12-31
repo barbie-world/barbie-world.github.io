@@ -1,5 +1,10 @@
 import './App.sass'
-import { Route, Switch } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom'
 
 function MainPage() {
   return (
@@ -28,9 +33,11 @@ function MainPage() {
 
 function App() {
   return (
-    <Switch>
-      <Route path="/" component={MainPage} />
-    </Switch>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </Router>
   )
 }
 
