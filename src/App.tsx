@@ -9,6 +9,18 @@ import React from 'react'
 import ReactHintFactory from 'react-hint'
 const ReactHint = ReactHintFactory(React)
 
+function Mission() {
+  return (
+    <article>
+      <h1>Our mission</h1>
+      <p>
+        Our mission at Barbie World is to create a safe and welcoming space for young girls to share their love for Barbie dolls and embrace their creativity and individuality. We strive to foster a sense of community and friendship among our members, and to provide a platform for them to exchange ideas, participate in fun activities and challenges, and express themselves in a positive and supportive environment. We aim to be a place where girls can be themselves, make lasting connections, and feel inspired to pursue their passions and dreams.
+      </p>
+      <Link to="/"><button type="button">← Back to main page</button></Link>
+    </article>
+  )
+}
+
 function Joining() {
   return (
     <article>
@@ -94,6 +106,7 @@ function MainPage() {
         The members were thrilled with the transformation and loved the new, playful and girly atmosphere of the server 💕. They enjoyed chatting with each other about their favorite dolls 💕, sharing their creative ideas 💡, and participating
       </p>
       <Link to="/joining"><button type="button">Join the following</button></Link>
+      <Link to="/mission"><button type="button">Learn more about BarbieWorld's mission</button></Link>
     </article>
   )
 }
@@ -105,6 +118,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/joining" element={<Joining />} />
         <Route path="/hashtag" element={<HashtagPage />} />
+        <Route path="/mission" element={<Mission />} />
       </Routes>
     </Router>
   )
