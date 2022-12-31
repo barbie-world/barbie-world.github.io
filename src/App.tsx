@@ -11,25 +11,31 @@ function Joining() {
     <article>
       <h1>Joining the following</h1>
       <p>
-        Find the server: To join the Barbie following, you will need to first find the Discord server where the community is located. You can do this by asking around, searching online, or by looking for server recommendations from friends or other community members.
+        Find the server: To join the Barbie following, you will need to first find the Discord server where the community is located 🔍. You can do this by asking around 💬, searching online 🌐, or by looking for server recommendations from friends or other community members 🤝.
       </p>
       <p>
-        Request an invitation: Once you have found the server, you will need to request an invitation to join. This is usually done by reaching out to the server owner or one of the moderators and asking to be added to the community.
+
+        Request an invitation: Once you have found the server, you will need to request an invitation to join 💌. This is usually done by reaching out to the server owner or one of the moderators and asking to be added to the community 🙏.
       </p>
       <p>
-        Wait for approval: After you have sent your request, you will need to wait for approval from the server owner or moderators. They will review your request and decide whether or not to allow you to join the community.
+
+        Wait for approval: After you have sent your request, you will need to wait for approval from the server owner or moderators 🕰. They will review your request and decide whether or not to allow you to join the community 🔍.
       </p>
       <p>
-        Accept the invitation: If your request is approved, you will receive an invitation to join the server. To join, you will need to click on the link provided in the invitation and follow the instructions to complete the process.
+
+        Accept the invitation: If your request is approved, you will receive an invitation to join the server 📩. To join, you will need to click on the link provided in the invitation and follow the instructions to complete the process 📝.
       </p>
       <p>
-        Introduce yourself: Once you have joined the server, you will need to introduce yourself to the community. This is usually done by posting a message in the introductions channel, telling the other members a little bit about yourself and your interests.
+
+        Introduce yourself: Once you have joined the server, you will need to introduce yourself to the community 🙋‍♀️. This is usually done by posting a message in the introductions channel 🗣, telling the other members a little bit about yourself and your interests 💬.
       </p>
       <p>
-        Participate in the community: After you have introduced yourself, you can start participating in the community by joining conversations, sharing your thoughts and ideas, and getting to know the other members. You can also participate in activities, events, and projects organized by the server owner or the community members.
+
+        Participate in the community: After you have introduced yourself, you can start participating in the community by joining conversations 💬, sharing your thoughts and ideas 💡, and getting to know the other members 🤝. You can also participate in activities 🎉, events 🎊, and projects organized by the server owner or the community members 🤝.
       </p>
       <p>
-        By following these steps, you can join the Barbie following and become an active member of the community.
+
+        By following these steps 📜, you can join the Barbie following and become an active member of the community 🤝.
       </p>
     </article>
   )
