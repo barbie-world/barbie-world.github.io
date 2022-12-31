@@ -12,6 +12,45 @@
   .hashtag
     color: var(--primary)
 
+  .react-hint
+    position: absolute
+  
+  .username
+    color: var(--primary)
+    background: var(--primary-bg)
+    border-radius: 0.5rem
+    padding: 0.25rem 0.25rem
+
+    &::before
+      content: '@'
+    
+  .user-info
+    width: 300px
+    background: var(--primary-bg)
+    border-radius: 1rem
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    padding: 1rem
+
+    .avatar
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      background: var(--primary)
+      margin-bottom: 1rem
+    
+    .user-info__text
+      h3
+        color: var(--primary)
+        margin: 0.5rem 0
+      p
+        color: var(--foreground)
+        margin: 0.5rem 0
+
   article
     margin-top: 1rem
     width: clamp(300px, 50vw, 1280px)

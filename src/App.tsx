@@ -5,6 +5,9 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import React from 'react'
+import ReactHintFactory from 'react-hint'
+const ReactHint = ReactHintFactory(React)
 
 function Joining() {
   return (
@@ -41,13 +44,33 @@ function Joining() {
   )
 }
 
+function UserInfo() {
+  return (
+    <div className="user-info">
+      <img src="https://cdn.discordapp.com/avatars/951692144823922688/2c294b703c4ca8cb1de39bc198af93cd.png?size=256" alt="BarbieBoss" className="avatar" />
+      <div className="user-info__text">
+        <h3>BarbieBoss</h3>
+        <p>Server owner</p>
+      </div>
+    </div>
+  );
+}
+
 function MainPage() {
   return (
     <article>
       <h1>Welcome to BarbieWorld</h1>
       <h2><span className="hashtag">#NewYearNewLook</span></h2>
       <p>
-        One day, the owner of the Discord server, who went by the username "BarbieBoss," noticed that the majority of the members were young girls who were passionate about Barbie dolls 💕. They would often talk about their collections in the "Barbie Chat" channel 💬, share pictures of their dolls in the "Barbie Gallery" channel 📷, and trade tips on how to style and accessorize them in the "Barbie Style" channel 💄.
+        <ReactHint
+          autoPosition
+          events
+          onRenderContent={() => (
+            <UserInfo />
+          )}
+        >
+        </ReactHint>
+        One day, the owner of the Discord server, who went by the username <span className="username" data-rh>BarbieBoss</span>, noticed that the majority of the members were young girls who were passionate about Barbie dolls 💕. They would often talk about their collections in the "Barbie Chat" channel 💬, share pictures of their dolls in the "Barbie Gallery" channel 📷, and trade tips on how to style and accessorize them in the "Barbie Style" channel 💄.
       </p>
       <p>
         BarbieBoss saw how much the members enjoyed interacting with each other and sharing their love for Barbie, and they realized that there was a strong sense of community and friendship among the members 💕. They wanted to create a space where the girls could fully embrace their love for Barbie and feel free to be themselves 💜.
