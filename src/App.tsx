@@ -17,29 +17,24 @@ function Joining() {
         Find the server: To join the Barbie following, you will need to first find the Discord server where the community is located 🔍. You can do this by asking around 💬, searching online 🌐, or by looking for server recommendations from friends or other community members 🤝.
       </p>
       <p>
-
         Request an invitation: Once you have found the server, you will need to request an invitation to join 💌. This is usually done by reaching out to the server owner or one of the moderators and asking to be added to the community 🙏.
       </p>
       <p>
-
         Wait for approval: After you have sent your request, you will need to wait for approval from the server owner or moderators 🕰. They will review your request and decide whether or not to allow you to join the community 🔍.
       </p>
       <p>
-
         Accept the invitation: If your request is approved, you will receive an invitation to join the server 📩. To join, you will need to click on the link provided in the invitation and follow the instructions to complete the process 📝.
       </p>
       <p>
-
         Introduce yourself: Once you have joined the server, you will need to introduce yourself to the community 🙋‍♀️. This is usually done by posting a message in the introductions channel 🗣, telling the other members a little bit about yourself and your interests 💬.
       </p>
       <p>
-
         Participate in the community: After you have introduced yourself, you can start participating in the community by joining conversations 💬, sharing your thoughts and ideas 💡, and getting to know the other members 🤝. You can also participate in activities 🎉, events 🎊, and projects organized by the server owner or the community members 🤝.
       </p>
       <p>
-
         By following these steps 📜, you can join the Barbie following and become an active member of the community 🤝.
       </p>
+      <Link to="/"><button type="button">← Back to main page</button></Link>
     </article>
   )
 }
@@ -56,11 +51,26 @@ function UserInfo() {
   );
 }
 
+function HashtagPage() {
+  return (
+    <article>
+      <h1><span className="hashtag">#NewYearNewLook</span></h1>
+      <p>
+        #NewYearNewLook is a hashtag that is often used on social media platforms to signify a desire to make a change or transformation in the new year. It is typically used in conjunction with posts about making changes to one's appearance, such as getting a new haircut or makeup style, or about making lifestyle changes, such as starting a new workout routine or changing one's diet. The hashtag is meant to encourage people to embrace the fresh start that a new year brings and to make positive changes in their lives.
+      </p>
+      <p>
+        The Barbie following has also adopted the #NewYearNewLook hashtag to signify a desire to make changes to their appearance and lifestyle in the new year. Members of the following often use the hashtag to share pictures of their Barbie dolls and to talk about their plans for the new year. They also use the hashtag to share tips and advice on how to style and accessorize their dolls, as well as to share their favorite Barbie products and accessories.
+      </p>
+      <Link to="/"><button type="button">← Back to main page</button></Link>
+    </article>
+  );
+}
+
 function MainPage() {
   return (
     <article>
       <h1>Welcome to BarbieWorld</h1>
-      <h2><span className="hashtag">#NewYearNewLook</span></h2>
+      <Link to="/hashtag"><h2><span className="hashtag">#NewYearNewLook</span></h2></Link>
       <p>
         <ReactHint
           autoPosition
@@ -68,8 +78,7 @@ function MainPage() {
           onRenderContent={() => (
             <UserInfo />
           )}
-        >
-        </ReactHint>
+        />
         One day, the owner of the Discord server, who went by the username <span className="username" data-rh>BarbieBoss</span>, noticed that the majority of the members were young girls who were passionate about Barbie dolls 💕. They would often talk about their collections in the <span className="channel">Barbie Chat</span> channel 💬, share pictures of their dolls in the <span className="channel">Barbie Gallery</span> channel 📷, and trade tips on how to style and accessorize them in the <span className="channel">Barbie Style</span> channel 💄.
       </p>
       <p>
@@ -95,6 +104,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/joining" element={<Joining />} />
+        <Route path="/hashtag" element={<HashtagPage />} />
       </Routes>
     </Router>
   )
